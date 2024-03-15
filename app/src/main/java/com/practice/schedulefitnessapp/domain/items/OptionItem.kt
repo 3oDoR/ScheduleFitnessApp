@@ -1,4 +1,4 @@
-package com.practice.schedulefitnessapp.domain
+package com.practice.schedulefitnessapp.domain.items
 
 data class OptionItem(
     val clubName: String,

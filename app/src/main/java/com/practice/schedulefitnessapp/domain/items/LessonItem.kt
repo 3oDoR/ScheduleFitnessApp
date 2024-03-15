@@ -1,4 +1,4 @@
-package com.practice.schedulefitnessapp.domain
+package com.practice.schedulefitnessapp.domain.items
 
 import java.util.Date
 
