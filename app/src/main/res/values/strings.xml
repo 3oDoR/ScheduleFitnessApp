@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">ScheduleFitnessApp</string>
+    <string name="classrooms">Занятия</string>
+    <string name="requests">Заявки</string>
+    <string name="add">Добавить</string>
+    <string name="chat">Чат</string>
+    <string name="more">Еще</string>
+    <string name="start_time">10:00</string>
+    <string name="end_time">11:00</string>
+    <string name="lesson_name">Бокс</string>
+    <string name="duration_lesson">1ч. 15мин.</string>
+    <string name="coach_name">Григорьев Ярослав</string>
+    <string name="location">Студия 2</string>
+    <string name="icon_group">icon_group</string>
+    <string name="ic_location_foreground">ic_location_foreground</string>
+    <string name="fragment_request">Hello request fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_add_fragment">Hello add fragment</string>
+    <string name="hello_chat_fragment">Hello chat fragment</string>
+    <string name="hello_more_fragment">Hello more fragment</string>
+
 </resources>

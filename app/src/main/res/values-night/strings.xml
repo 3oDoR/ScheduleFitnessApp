@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="classrooms">Занятия</string>
+    <string name="requests">Заявки</string>
+    <string name="add">Добавить</string>
+    <string name="chat">Чат</string>
+    <string name="more">Еще</string>
+    <string name="time">10:00</string>
+    <string name="lesson_name">Бокс</string>
+    <string name="coach_name">Григорьев Ярослав</string>
+    <string name="location">Студия 2</string>
+</resources>
