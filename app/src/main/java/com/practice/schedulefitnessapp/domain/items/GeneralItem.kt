@@ -2,7 +2,7 @@ package com.practice.schedulefitnessapp.domain.items
 
 import com.google.gson.annotations.SerializedName
 
-data class GeneralItems(
+data class GeneralItem(
     @SerializedName("lessons")
     val lessons: List<LessonItem>,
     @SerializedName("option")
