@@ -16,15 +16,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
-
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
-        viewModel.lessonList.observe(this) {
-            Log.d("MyLog", "onCreate: $it")
-        }
-        viewModel.getLessonList()
-
         setContentView(binding.root)
-
+        setFragment(ClassroomFragment())
         binding.bottomNavigationView.setOnItemReselectedListener {
             Log.d("MyLog", "${it.itemId}")
             when (it.itemId) {
@@ -36,6 +30,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
 
     private fun setFragment(fragment: Fragment): Int {
         return supportFragmentManager.beginTransaction()
