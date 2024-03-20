@@ -15,13 +15,20 @@ object LessonListRepositoryImpl : LessonListRepository {
         TODO()
     }
 
+    override suspend fun getGeneralItem(): GeneralItem {
+        val text = URL(url).readText()
+        val gson = Gson()
+        val parser = gson.fromJson(text, GeneralItem::class.java)
+        Log.d("MyLog", "getGeneralItem(parser): $parser")
+        return parser
+    }
+
     override suspend fun getLessonList(): GeneralItem {
         val text = URL(url).readText()
         val gson = Gson()
 //        Log.d("MyLog", "getLessonList MY_STRING: $text")
         val parser = gson.fromJson(text, GeneralItem::class.java)
-        Log.d("MyLog", "getResponse: gson ${parser}")
-
+//        Log.d("MyLog", "getResponse: gson ${parser}")
         return parser
     }
 
