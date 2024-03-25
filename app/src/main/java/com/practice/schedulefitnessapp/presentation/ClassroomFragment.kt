@@ -24,12 +24,12 @@ class ClassroomFragment : Fragment() {
         binding = FragmentClassroomBinding.inflate(inflater, container, false)
         setupRecyclerview()
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
-        viewModel.getLessonList()
+        viewModel.getGeneralItem()
         viewModel.lessonItemList.observe(viewLifecycleOwner) {
-            lessonListAdapter.lessonItemList = it
+            lessonListAdapter.training = it
         }
 
-        Log.d("MyLog", "onCreateView: ${lessonListAdapter.lessonItemList}")
+        Log.d("MyLog", "onCreateView: ${lessonListAdapter.training}")
         return binding.root
     }
 
